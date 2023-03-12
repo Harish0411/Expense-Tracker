@@ -8,7 +8,6 @@ let expense = document.getElementById("exp");
 let list = document.getElementById("list");
 text.focus();
 
-
 let localStorageTransactions = JSON.parse(localStorage.getItem("transactions"));
 let transactions= localStorage.getItem("transactions") !== null ? localStorageTransactions : [];
 
@@ -58,19 +57,6 @@ let addTransaction = function(transaction){
 	 `
 	 list.appendChild(listItem);
 }
-
-
-
-/*function deleteHistory(id){
-    if(transactions.id == id){
-	     list.innerHTML = "";
-	}
-	updateStorage();
-}
- function updateStorage(){
-   localStorage.setItem("transactions", JSON.stringify(transactions));
- }*/
-
 
 function update(){
      let amounts = transactions.map(transaction => transaction.amount);
