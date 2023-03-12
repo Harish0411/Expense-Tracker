@@ -65,14 +65,9 @@ function update(){
 		}, 0);
 	 let incomes = amounts.filter(value => value > 0).reduce((acc, value) => (acc += value),0);
 	 let expenses = amounts.filter(value => value<0).reduce((acc, value) => (acc += value),0)*-1;
-	 	 console.log(amounts);
-		 console.log(incomes);
-		 console.log(expenses);
-		 console.log(total);
      balance.innerText = `$${total}`;
 	 income.innerText = `$${incomes}`;
-	 expense.innerText = `$${expenses}`;
-	 
+	 expense.innerText = `$${expenses}`; 
 	 }
 
 function deleteHistory(id){
