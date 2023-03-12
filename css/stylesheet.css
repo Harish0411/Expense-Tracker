@@ -161,7 +161,7 @@ input{
 
 @media (min-width:320px){
 	.container{
-		width: 100%;
+		width: 90%;
    
 	   }
 	.row{
@@ -176,7 +176,7 @@ input{
 
 @media (min-width: 690px){
 	.container{
-     width: 100%;
+     width: 90%;
 
 	}
 	.row{
