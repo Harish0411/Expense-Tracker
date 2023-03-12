@@ -165,8 +165,13 @@ input{
 		flex-wrap: wrap;
 	
 	}
-	.col{
+	.col:first-child{
 		width: 100%;
+		order: 2;
+	}
+	.col:nth-child(2){
+		width: 100%;
+		order: 1;
 	}
 }
 
@@ -180,8 +185,13 @@ input{
 		flex-wrap: nowrap;
 		
 	}
-	.col{
+	.col:first-child{
 		width: 50%;
+		order: 1;
+	}
+	.col:nth-child(2){
+		width: 50%;
+		order: 2;
 	}
 }
 
@@ -196,7 +206,12 @@ input{
 		flex-wrap: nowrap;
 		
 	}
-	.col{
+	.col:first-child{
 		width: 50%;
+		order: 1;
+	}
+	.col:nth-child(2){
+		width: 50%;
+		order: 2;
 	}
 }
